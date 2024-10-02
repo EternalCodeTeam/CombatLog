@@ -6,13 +6,15 @@ object Versions {
     const val JUNIT_JUPITER_PARAMS = "5.10.3"
     const val JUNIT_JUPITER_ENGINE = "5.10.3"
 
+    const val JETBRAINS_ANNOTATIONS = "24.1.0"
+
     const val ETERNALCODE_COMMONS = "1.1.3"
     // TODO: Multification.
 
     const val ADVENTURE_PLATFORM_BUKKIT = "4.3.4"
     const val ADVENTURE_TEXT_MINIMESSAGE = "4.17.0"
 
-    const val LITE_COMMANDS = "2.8.9"
+    const val LITE_COMMANDS = "3.5.0"
     const val OKAERI_CONFIGS_YAML_BUKKIT = "5.0.3"
     const val OKAERI_CONFIGS_SERDES_COMMONS = "5.0.3"
     const val OKAERI_CONFIGS_SERDES_BUKKIT = "5.0.3"

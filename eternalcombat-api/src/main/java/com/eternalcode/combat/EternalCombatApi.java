@@ -1,13 +1,12 @@
 package com.eternalcode.combat;
 
-import com.eternalcode.combat.config.implementation.PluginConfig;
-import com.eternalcode.combat.drop.DropKeepInventoryManager;
-import com.eternalcode.combat.drop.DropManager;
+import com.eternalcode.combat.fight.drop.DropKeepInventoryService;
 import com.eternalcode.combat.fight.FightManager;
+import com.eternalcode.combat.fight.drop.DropService;
 import com.eternalcode.combat.fight.effect.FightEffectService;
-import com.eternalcode.combat.fight.pearl.FightPearlManager;
-import com.eternalcode.combat.fight.tagout.FightTagOutService;
+import com.eternalcode.combat.fight.pearl.FightPearlService;
 import com.eternalcode.combat.region.RegionProvider;
+import com.eternalcode.combat.fight.tagout.FightTagOutService;
 
 public interface EternalCombatApi {
 
@@ -15,16 +14,14 @@ public interface EternalCombatApi {
 
     RegionProvider getRegionProvider();
 
-    FightPearlManager getFightPearlManager();
+    FightPearlService getFightPearlService();
 
     FightTagOutService getFightTagOutService();
 
     FightEffectService getFightEffectService();
 
-    DropManager getDropManager();
+    DropService getDropService();
 
-    DropKeepInventoryManager getDropKeepInventoryManager();
-
-    PluginConfig getPluginConfig();
+    DropKeepInventoryService getDropKeepInventoryService();
 
 }

@@ -8,7 +8,7 @@ public interface RegionProvider {
     Optional<Region> getRegion(Location location);
 
     default boolean isInRegion(Location location) {
-        return getRegion(location).isPresent();
+        return this.getRegion(location).isPresent();
     }
 
 }
